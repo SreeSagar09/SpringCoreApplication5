@@ -1,0 +1,12 @@
+Simple Program to show how to configure spring beans using Xml file and constructor dependency injection, Reference type as a dependency:
+Programs:
+* Address.java
+* Employee.java
+* Student.java
+* Test.java
+Note:
+* ref attribute is used to configure reference type dependency.
+* If both bean id are same in configuration file it will throw "main" org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Bean name 'xxxx' is already used in this <beans> element Offending resource: class path resource [xxx.xml]
+Output:
+Employee [empId=101, empName=Smith, age=28, designation=Software Enginner, address=Address [houseNo=21-290/1, area=Hi-tech city, city=Hyderabad, state=Telangana, country=India, zipCode=5006112]]
+Student [sId=102, sName=Rose, age=26, course=Computers Application, address=Address [houseNo=450-12-1, area=Ammeerpet, city=Hyderabad, state=Telangana, country=India, zipCode=5006100]]
